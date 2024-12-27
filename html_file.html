@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_file.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css" />
+    <title>Password Generator</title>
+</head>
+<body>
+<div class="container">
+    <div class="input-box">
+        <input type="text" id="passwordInput" readonly placeholder="🔧 Customize settings below!" />
+        <i class="fas fa-copy" id="copy-btn"></i>
+    </div>
+    <div class="range-box">
+        <input type="range" min="6" max="40" value="8" id="range" />
+        <span class="slider-number" id="slider-number">8</span>
+    </div>
+    <div class="checkboxes">
+        <input type="checkbox" id="includeLower" checked />
+        <label for="includeLower">Include Lowercase</label>
+        <input type="checkbox" id="includeUpper" checked />
+        <label for="includeUpper">Include Uppercase</label>
+        <input type="checkbox" id="includeNumbers" checked />
+        <label for="includeNumbers">Include Numbers</label>
+        <input type="checkbox" id="includeSymbols" checked />
+        <label for="includeSymbols">Include Symbols</label>
+    </div>
+    <button class="generate-button" id="generate-button">Generate Password</button>
+    <div id="expiryTimer"></div>
+    <div id="copyFeedback" class="copy-feedback">Copied!</div>
+</div>
+
+<div id="mouseEffect"></div>
+
+<script src="js_file.js"></script>
+</body>
+</html>
+
+
+
+
+
